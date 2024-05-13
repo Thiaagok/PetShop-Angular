@@ -1,0 +1,34 @@
+<form (ngSubmit)="onNuevoPersonaje()">
+  <input
+  type="text"
+  name="marca"
+  [(ngModel)]="comida.marca"
+  placeholder="marca del producto">
+
+  <input
+  type="text"
+  name="categoria"
+  [(ngModel)]="comida.categoria"
+  placeholder="categoria del producto"
+  list="categorias">
+  <datalist id="categorias">
+    <option value="adultos">
+    <option value="medianos">
+    <option value="bebes">
+  </datalist>
+
+  <input
+  type="number"
+  name="precio"
+  [(ngModel)]="comida.precio"
+  placeholder="precio"
+  >
+
+  <input
+  type="number"
+  name="stock"
+  [(ngModel)]="comida.stock"
+  placeholder="stock a cargar">
+
+  <button>Agregar</button>
+</form>

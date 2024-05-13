@@ -1,0 +1,6 @@
+<h1>Sistema de Stock</h1>
+
+<app-listado-productos [listaComidas]="listaProductosComida"
+(CambiarStockPorId)="onCambiarValorStock($event)"
+></app-listado-productos>
+<app-manejo-stock (nuevoPersonaje)="onNuevoProductoComida($event)"></app-manejo-stock>

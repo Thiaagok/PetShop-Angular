@@ -1,0 +1,14 @@
+<ul class="list-group">
+  <li class="list-item" *ngFor="let comida of listaComidas">
+  <p>Marca:</p>
+  {{comida.marca}}
+  <p>Categoria:</p>
+  {{comida.categoria}}
+  <p>Precio:</p>
+  {{comida.precio}}
+  <p>Stock:</p>
+  {{comida.stock}}
+  <button (click)="EnviarStockyId(comida.id,1)" class="boton-cambiarValor">+1</button>
+  <button (click)="EnviarStockyId(comida.id,2)" class="boton-cambiarValor">-1</button>
+  </li>
+</ul>

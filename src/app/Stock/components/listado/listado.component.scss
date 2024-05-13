@@ -1,0 +1,18 @@
+.list-group{
+  display: flex;
+  flex-direction: column;
+}
+.list-group li{
+  background-color: darkgrey;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 50%;
+}
+.list-group p{
+  padding-left: 10px;
+  padding-right: 5px;
+}
